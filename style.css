@@ -1,0 +1,175 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #2b2b2b;
+    background-color: #ffffff; /* Fondo blanco puro */
+    line-height: 1.8;
+    text-align: center; /* Centramos todo al estilo Barrow */
+}
+
+/* CABECERA Y NAVEGACIÓN */
+header {
+    padding: 40px 20px 20px;
+}
+
+.logo-container {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 250px; /* Tamaño del logo */
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2b2b2b;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #888;
+}
+
+/* SECCIÓN HERO (BIENVENIDA) */
+.hero {
+    padding: 80px 20px;
+    background-color: #faf9f7; /* Un tono crema ultra suave */
+    margin-bottom: 60px;
+}
+
+.hero-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #555;
+    font-style: italic;
+}
+
+/* PORTAFOLIO / GRID DE PRODUCTOS */
+.portfolio {
+    padding: 0 40px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portfolio h2 {
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 50px;
+}
+
+.item img {
+    width: 100%;
+    height: 350px; /* Fijamos altura para que queden alineadas */
+    object-fit: cover; /* Recorta la imagen con elegancia si no cuadra la proporción */
+    transition: opacity 0.3s ease;
+}
+
+.item img:hover {
+    opacity: 0.85; /* Pequeño efecto al pasar el ratón */
+}
+
+.item h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 15px 0 5px;
+}
+
+.item p {
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* BOTONES */
+.btn-comprar, .btn-contacto {
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: transparent;
+    color: #2b2b2b;
+    border: 1px solid #2b2b2b;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s;
+}
+
+.btn-comprar:hover, .btn-contacto:hover {
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+/* FILOSOFÍA */
+.philosophy {
+    background-color: #faf9f7;
+    padding: 80px 20px;
+}
+
+.philosophy h2 {
+    font-weight: 300;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.philosophy p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #555;
+}
+
+/* FOOTER */
+footer {
+    padding: 60px 20px;
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-bottom: 25px;
+    color: #555;
+}
+
+.copyright {
+    margin-top: 50px;
+    font-size: 0.75rem;
+    color: #999;
+}
